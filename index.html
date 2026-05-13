@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pathwise | Future Scan</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="opening opening-v2">
+    <main class="opening-film">
+      <div class="cinema-carousel" aria-hidden="true">
+        <div class="cinema-slide"></div>
+        <div class="cinema-slide"></div>
+        <div class="cinema-slide"></div>
+        <div class="cinema-slide"></div>
+        <div class="cinema-slide"></div>
+        <div class="cinema-slide"></div>
+        <div class="cinema-slide"></div>
+        <div class="cinema-slide"></div>
+        <div class="cinema-slide"></div>
+        <div class="cinema-slide"></div>
+      </div>
+      <div class="cinema-flare"></div>
+      <div class="cinema-grid"></div>
+      <section class="opening-copy opening-copy--v2">
+        <p class="eyebrow">PATHWISE · FUTURE CAREER PLANNING ADVISOR</p>
+        <h1>Future Scan</h1>
+        <p class="opening-lead">For every dream still finding its shape, may this journey gently light the way forward.</p>
+        <div class="stage-map stage-map--v2" aria-label="Ten-stage map">
+          <span>01 Sparks</span><span>02 Code</span><span>03 Values</span><span>04 Family</span><span>05 City</span>
+          <span>06 Wave</span><span>07 Choice</span><span>08 Action</span><span>09 Echo</span><span>10 Synthesis</span>
+        </div>
+        <a class="button button--primary opening-cta" id="beginScan" href="./stage-01.html">Begin the Scan</a>
+      </section>
+    </main>
+    <script>
+      sessionStorage.removeItem("pathwiseStarted");
+      sessionStorage.removeItem("pathwise-ai-chat-history");
+      localStorage.removeItem("pathwise-future-scan-en-v2");
+      document.querySelector("#beginScan").addEventListener("click", () => {
+        sessionStorage.setItem("pathwiseStarted", "true");
+      });
+    </script>
+  <script src="./chat-widget.js"></script></body>
+</html>
